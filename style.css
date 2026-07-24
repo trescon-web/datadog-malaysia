@@ -1603,6 +1603,31 @@ button {
   line-height: 1.4;
 }
 
+/* ===== Custom Form Text Input ===== */
+.custom-input {
+  width: 100%;
+  padding: 14px 18px;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.custom-input:focus {
+  border-color: #8000FF;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 4px rgba(128, 0, 255, 0.1);
+}
+
+.custom-input::placeholder {
+  color: #9CA3AF;
+  font-weight: 400;
+}
+
 /* ===== Custom Select Dropdown ===== */
 .select-wrapper {
   position: relative;

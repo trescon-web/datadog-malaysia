@@ -1599,8 +1599,59 @@ button {
   font-size: 1.0625rem;
   font-weight: 700;
   color: var(--text-dark);
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   line-height: 1.4;
+}
+
+/* ===== Custom Select Dropdown ===== */
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select {
+  width: 100%;
+  padding: 16px 48px 16px 20px;
+  background: #F8F9FA;
+  border: 1px solid #E6E8EC;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.custom-select:focus {
+  border-color: #8000FF;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 4px rgba(128, 0, 255, 0.1);
+}
+
+.custom-select option {
+  color: #111827;
+  padding: 12px;
+}
+
+.custom-select option:disabled {
+  color: #9CA3AF;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+.select-wrapper:hover .select-arrow {
+  transform: translateY(-50%) translateY(2px);
 }
 
 .radio-group {

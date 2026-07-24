@@ -608,55 +608,71 @@
                     <form class="registration-form" onsubmit="event.preventDefault();">
                         
                         <!-- Question 1 -->
-                        <div class="form-group">
-                            <label class="form-label">What stage is your organisation currently at in its AI adoption journey?</label>
-                            <div class="radio-group">
-                                <label class="radio-label"><input type="radio" name="q1"> <span>Evaluating AI use cases</span></label>
-                                <label class="radio-label"><input type="radio" name="q1"> <span>Running pilot projects</span></label>
-                                <label class="radio-label"><input type="radio" name="q1"> <span>Deploying AI into production</span></label>
-                                <label class="radio-label"><input type="radio" name="q1"> <span>Scaling AI across multiple teams or business units</span></label>
-                                <label class="radio-label"><input type="radio" name="q1"> <span>Establishing enterprise-wide AI governance and operating models</span></label>
+                        <div class="form-group" style="margin-bottom: 24px;">
+                            <label class="form-label" for="q1-select" style="font-weight: 600; margin-bottom: 10px; display: block;">What stage is your organisation currently at in its AI adoption journey?</label>
+                            <div class="select-wrapper">
+                                <select class="custom-select" id="q1-select" required>
+                                    <option value="" disabled selected>Select your organisation's AI adoption stage...</option>
+                                    <option value="Evaluating AI use cases">Evaluating AI use cases</option>
+                                    <option value="Running pilot projects">Running pilot projects</option>
+                                    <option value="Deploying AI into production">Deploying AI into production</option>
+                                    <option value="Scaling AI across multiple teams or business units">Scaling AI across multiple teams or business units</option>
+                                    <option value="Establishing enterprise-wide AI governance and operating models">Establishing enterprise-wide AI governance and operating models</option>
+                                </select>
+                                <svg class="select-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8000FF" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                             </div>
                         </div>
 
                         <!-- Question 2 -->
-                        <div class="form-group">
-                            <label class="form-label">What is your organisation’s biggest challenge in scaling AI responsibly?</label>
-                            <div class="radio-group">
-                                <label class="radio-label"><input type="radio" name="q2"> <span>Governance, ethics, and regulatory readiness</span></label>
-                                <label class="radio-label"><input type="radio" name="q2"> <span>Security and risk management</span></label>
-                                <label class="radio-label"><input type="radio" name="q2"> <span>Data privacy, quality, and access</span></label>
-                                <label class="radio-label"><input type="radio" name="q2"> <span>Cost control and value measurement</span></label>
-                                <label class="radio-label"><input type="radio" name="q2"> <span>Operational visibility, reliability, and monitoring</span></label>
-                                <label class="radio-label"><input type="radio" name="q2"> <span>Cross-functional ownership and accountability</span></label>
+                        <div class="form-group" style="margin-bottom: 24px;">
+                            <label class="form-label" for="q2-select" style="font-weight: 600; margin-bottom: 10px; display: block;">What is your organisation’s biggest challenge in scaling AI responsibly?</label>
+                            <div class="select-wrapper">
+                                <select class="custom-select" id="q2-select" required>
+                                    <option value="" disabled selected>Select your biggest challenge...</option>
+                                    <option value="Governance, ethics, and regulatory readiness">Governance, ethics, and regulatory readiness</option>
+                                    <option value="Security and risk management">Security and risk management</option>
+                                    <option value="Data privacy, quality, and access">Data privacy, quality, and access</option>
+                                    <option value="Cost control and value measurement">Cost control and value measurement</option>
+                                    <option value="Operational visibility, reliability, and monitoring">Operational visibility, reliability, and monitoring</option>
+                                    <option value="Cross-functional ownership and accountability">Cross-functional ownership and accountability</option>
+                                </select>
+                                <svg class="select-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8000FF" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                             </div>
                         </div>
 
                         <!-- Question 3 -->
-                        <div class="form-group">
-                            <label class="form-label">Which AI initiatives are currently most relevant to your organisation in Malaysia?</label>
-                            <div class="radio-group">
-                                <label class="radio-label"><input type="radio" name="q3"> <span>Generative AI applications</span></label>
-                                <label class="radio-label"><input type="radio" name="q3"> <span>AI agents and workflow automation</span></label>
-                                <label class="radio-label"><input type="radio" name="q3"> <span>Customer experience and digital channels</span></label>
-                                <label class="radio-label"><input type="radio" name="q3"> <span>Internal productivity and knowledge management</span></label>
-                                <label class="radio-label"><input type="radio" name="q3"> <span>Software development and engineering productivity</span></label>
-                                <label class="radio-label"><input type="radio" name="q3"> <span>Cybersecurity and fraud detection</span></label>
-                                <label class="radio-label"><input type="radio" name="q3"> <span>Data analytics and decision intelligence</span></label>
+                        <div class="form-group" style="margin-bottom: 24px;">
+                            <label class="form-label" for="q3-select" style="font-weight: 600; margin-bottom: 10px; display: block;">Which AI initiatives are currently most relevant to your organisation in Malaysia?</label>
+                            <div class="select-wrapper">
+                                <select class="custom-select" id="q3-select" required>
+                                    <option value="" disabled selected>Select most relevant initiative...</option>
+                                    <option value="Generative AI applications">Generative AI applications</option>
+                                    <option value="AI agents and workflow automation">AI agents and workflow automation</option>
+                                    <option value="Customer experience and digital channels">Customer experience and digital channels</option>
+                                    <option value="Internal productivity and knowledge management">Internal productivity and knowledge management</option>
+                                    <option value="Software development and engineering productivity">Software development and engineering productivity</option>
+                                    <option value="Cybersecurity and fraud detection">Cybersecurity and fraud detection</option>
+                                    <option value="Data analytics and decision intelligence">Data analytics and decision intelligence</option>
+                                </select>
+                                <svg class="select-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8000FF" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                             </div>
                         </div>
 
                         <!-- Question 4 -->
-                        <div class="form-group">
-                            <label class="form-label">What best describes your role in AI-related decision-making?</label>
-                            <div class="radio-group">
-                                <label class="radio-label"><input type="radio" name="q4"> <span>Executive sponsor</span></label>
-                                <label class="radio-label"><input type="radio" name="q4"> <span>Technology leader</span></label>
-                                <label class="radio-label"><input type="radio" name="q4"> <span>Security leader</span></label>
-                                <label class="radio-label"><input type="radio" name="q4"> <span>Data, analytics, or AI leader</span></label>
-                                <label class="radio-label"><input type="radio" name="q4"> <span>Risk, governance, or compliance leader</span></label>
-                                <label class="radio-label"><input type="radio" name="q4"> <span>Business unit leader</span></label>
-                                <label class="radio-label"><input type="radio" name="q4"> <span>Innovation or transformation leader</span></label>
+                        <div class="form-group" style="margin-bottom: 28px;">
+                            <label class="form-label" for="q4-select" style="font-weight: 600; margin-bottom: 10px; display: block;">What best describes your role in AI-related decision-making?</label>
+                            <div class="select-wrapper">
+                                <select class="custom-select" id="q4-select" required>
+                                    <option value="" disabled selected>Select your role...</option>
+                                    <option value="Executive sponsor">Executive sponsor</option>
+                                    <option value="Technology leader">Technology leader</option>
+                                    <option value="Security leader">Security leader</option>
+                                    <option value="Data, analytics, or AI leader">Data, analytics, or AI leader</option>
+                                    <option value="Risk, governance, or compliance leader">Risk, governance, or compliance leader</option>
+                                    <option value="Business unit leader">Business unit leader</option>
+                                    <option value="Innovation or transformation leader">Innovation or transformation leader</option>
+                                </select>
+                                <svg class="select-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8000FF" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                             </div>
                         </div>
 
